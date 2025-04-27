@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Basic WebGIS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link tới thư viện Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    
+    <style>
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Link tới thư viện Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+<script>
+    // Tạo bản đồ tại thẻ div "map"
+    var map = L.map('map').setView([21.0285, 105.8542], 13); // Hà Nội
+
+    // Thêm lớp nền bản đồ từ OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Thêm một marker
+    L.marker([21.0285, 105.8542])
+        .addTo(map)
+        .bindPopup('<b>Xin chào!</b><br>Đây là Hà Nội.')
+        .openPopup();
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Basic WebGIS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link tới thư viện Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    
+    <style>
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Link tới thư viện Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+<script>
+    // Tạo bản đồ tại thẻ div "map"
+    var map = L.map('map').setView([21.0285, 105.8542], 13); // Hà Nội
+
+    // Thêm lớp nền bản đồ từ OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Thêm một marker
+    L.marker([21.0285, 105.8542])
+        .addTo(map)
+        .bindPopup('<b>Xin chào!</b><br>Đây là Hà Nội.')
+        .openPopup();
+</script>
+
+</body>
+</html>
